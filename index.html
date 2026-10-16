@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123b2a"><link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png"><link rel="stylesheet" href="style.css">
+<title>Hussain Traders POS</title>
+</head>
+<body>
+<header><h1>حسین ٹریڈرز POS</h1><p>بلنگ اور اسٹاک ریکارڈ</p></header>
+<main>
+<section class="card"><h2>نئی پروڈکٹ</h2>
+<div class="grid"><label>پروڈکٹ کا نام<input id="pname" placeholder="مثلاً بسکٹ"></label><label>خرید ریٹ<input id="pcost" type="number" min="0" placeholder="0"></label><label>فروخت ریٹ<input id="pprice" type="number" min="0" placeholder="0"></label><label>مقدار<input id="pqty" type="number" min="0" placeholder="0"></label></div>
+<button id="addProduct">پروڈکٹ شامل کریں</button></section>
+<section class="card"><h2>پروڈکٹ اسٹاک</h2><div id="products"></div></section>
+<section class="card"><h2>نیا بل</h2><label>دکان / گاہک کا نام<input id="customer" placeholder="دکان کا نام"></label><div class="grid"><label>پروڈکٹ<select id="billProduct"></select></label><label>تعداد<input id="billQty" type="number" min="1" value="1"></label></div><button id="addToBill">بل میں شامل کریں</button><div id="cart"></div><h3>کل: <span id="total">0</span></h3><button id="saveBill">بل محفوظ کریں</button> <button class="secondary" id="printBill">بل پرنٹ کریں</button></section>
+<section class="card"><h2>بلوں کی تاریخ</h2><div id="bills"></div><button class="secondary" id="exportData">بیک اپ ڈاؤن لوڈ کریں</button><label class="file">بیک اپ بحال کریں<input id="importData" type="file" accept="application/json"></label></section>
+<p class="note">یہ ابتدائی آف لائن ورژن ہے۔ ڈیٹا اسی براؤزر/ڈیوائس میں محفوظ ہوتا ہے؛ موبائل اور کمپیوٹر کی خودکار Sync کے لیے الگ سرور درکار ہے۔ باقاعدہ بیک اپ لیں۔</p>
+</main><script src="app.js"></script>
+</body></html>
